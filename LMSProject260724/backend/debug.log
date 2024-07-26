@@ -1,0 +1,16 @@
+ERROR 2024-07-26 18:23:43,138 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-07-26 18:23:43,165 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-07-26 18:23:44,078 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-07-26 18:23:44,120 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-07-26 18:25:45,993 log Internal Server Error: /api/schedule-with-tests/2024-07-25/14/
+ERROR 2024-07-26 18:25:45,994 basehttp "GET /api/schedule-with-tests/2024-07-25/14/ HTTP/1.1" 500 61
+ERROR 2024-07-26 18:59:27,773 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-07-26 18:59:27,774 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-07-26 18:59:28,350 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-07-26 18:59:28,353 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-07-26 19:05:42,489 log Internal Server Error: /api/schedule-with-tests/2024-07-25/14/
+ERROR 2024-07-26 19:05:42,490 basehttp "GET /api/schedule-with-tests/2024-07-25/14/ HTTP/1.1" 500 61
+ERROR 2024-07-26 19:14:53,752 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-07-26 19:14:53,763 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-07-26 19:14:54,361 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-07-26 19:14:54,385 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
