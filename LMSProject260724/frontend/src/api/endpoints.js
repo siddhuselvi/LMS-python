@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { format } from 'date-fns';
-const API_URL = "http://localhost:8000";
+//const API_URL = "http://localhost:8000";
 
-//const API_URL = "https://cc.kwantumg.com";
+const API_URL = "https://cc.kwantumg.com";
 
 
 export function getLoginApi() {
