@@ -131,10 +131,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cc_db3',
+        'NAME': 'cc_db5',
         'USER':'cc_dev',
         'PASSWORD':'CA!mp2us3',
-       # 'HOST': '66.23.230.20'
+        'HOST': '66.23.230.20'
     }
 }
 
@@ -190,7 +190,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',
      'http://66.23.230.20:3000',
-    # 'https://cc.kwantumg.com'
+     'https://cc.kwantumg.com'
 
 ]
 
