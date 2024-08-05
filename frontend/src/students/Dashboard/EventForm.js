@@ -1,0 +1,57 @@
+import React, { useState } from 'react';
+import './Eventform.css';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
+const EventForm = ({ selectedDate, eventDetails }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex(prevIndex => (prevIndex > 0 ? prevIndex - 1 : eventDetails.length - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(prevIndex => (prevIndex < eventDetails.length - 1 ? prevIndex + 1 : 0));
+  };
+
+  const currentEvent = eventDetails[currentIndex];
+
+  console.log('selected Date: ', selectedDate);
+  console.log('eventDetails: ', eventDetails);
+
+  return (
+    <div className="event-form">
+      <div>
+        <label>Date</label>
+        <input type="text" value={selectedDate.toLocaleDateString('en-GB')} readOnly />
+      </div><p></p>
+      {Array.isArray(eventDetails) && eventDetails.length > 0 ? (
+        <>
+          
+          <ul>
+            <li className="event-list-item">
+              {currentEvent.subTopic || currentEvent.topic ? (
+                <div className="event-form-group">
+                  <p>{currentEvent.subTopic} <span>in </span> {currentEvent.topic},</p>
+                </div>
+              ) : null}
+              <div className="event-form-group">
+                <p>Session taken in <span>{currentEvent.collegeName}</span> <span>college</span>, 
+                <span>{currentEvent.year} <span>year</span></span>, 
+                <span>{currentEvent.department}</span> <br />
+                <span>Test Name: {currentEvent.test_name}</span></p>
+              </div>
+            </li>
+          </ul>
+          <div className="navigation" style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <button onClick={handlePrev} style={{ backgroundColor: '#F1A128', borderRadius: '5px' }}><FaChevronLeft /></button>
+            <button onClick={handleNext} style={{ backgroundColor: '#F1A128', borderRadius: '5px' }}><FaChevronRight /></button>
+          </div>
+        </>
+      ) : (
+        <p>No events found for the selected date.</p>
+      )}
+    </div>
+  );
+};
+
+export default EventForm;

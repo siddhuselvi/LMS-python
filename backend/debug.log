@@ -1,0 +1,2632 @@
+ERROR 2024-08-01 00:30:34,552 views Received request data: {'test_name': 'dr4', 'question_id': 110, 'student_id': 1, 'dtm_start': '2024-07-31T18:58:18.452Z', 'dtm_end': '2024-07-31T19:00:30.047Z', 'code': "print('Welcome to python coding')", 'p_type': 'python', 'inputs': ''}
+ERROR 2024-08-01 00:30:34,717 log Internal Server Error: /api/tests-answer-com/
+ERROR 2024-08-01 00:30:34,889 basehttp "POST /api/tests-answer-com/ HTTP/1.1" 500 105
+ERROR 2024-08-01 00:34:03,974 views Received request data: {'test_name': 'dr4', 'question_id': 110, 'student_id': 1, 'dtm_start': '2024-07-31T18:58:18.452Z', 'dtm_end': '2024-07-31T19:03:57.373Z', 'code': "print('Welcome to python coding')", 'p_type': 'python', 'inputs': ''}
+ERROR 2024-08-01 00:34:04,153 log Internal Server Error: /api/tests-answer-com/
+ERROR 2024-08-01 00:34:04,212 basehttp "POST /api/tests-answer-com/ HTTP/1.1" 500 105
+ERROR 2024-08-01 00:36:50,541 log Internal Server Error: /api/test-candidates-map/non-db/create/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 4768, in post
+    students = candidate_master.objects.filter(*queries)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\query.py", line 1470, in build_filter
+    raise FieldError("Cannot parse keyword query as dict")
+django.core.exceptions.FieldError: Cannot parse keyword query as dict
+ERROR 2024-08-01 00:36:50,672 basehttp "POST /api/test-candidates-map/non-db/create/ HTTP/1.1" 500 159182
+ERROR 2024-08-01 00:37:48,128 views Received request data: {'test_name': 'dr4', 'question_id': 110, 'student_id': 1, 'dtm_start': '2024-07-31T18:58:18.452Z', 'dtm_end': '2024-07-31T19:07:47.928Z', 'code': "print('Welcome to python coding')", 'p_type': 'python', 'inputs': ''}
+ERROR 2024-08-01 09:53:37,189 views Received request data: {'code': '#include <stdio.h>\n\nint factorial(int n ){\n    if (n == 0 || n == 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nint main() {\n    int n = 5;  // You can change this to any number\n    printf("%d\\n", factorial(n));\n    return 0;\n}', 'dtm_end': '2024-07-30T15:39:00+05:30', 'dtm_start': '2024-07-30T15:36:28+05:30', 'inputs': '1', 'p_type': 'c', 'question_id': 24, 'student_id': 4, 'test_name': 'Code-Test-Start'}
+ERROR 2024-08-01 09:53:37,550 views Temp C Path Created...: D:\V_Project\LMS-New\backend\assets\ca30e3d0-9479-482e-8027-18bc8193f8fe.c
+ERROR 2024-08-01 09:53:37,550 views Temp C Execute Path Created...: D:\V_Project\LMS-New\backend\assets\ca30e3d0-9479-482e-8027-18bc8193f8fe
+ERROR 2024-08-01 09:53:41,649 views Compile Result...: CompletedProcess(args=['gcc', 'D:\\V_Project\\LMS-New\\backend\\assets\\ca30e3d0-9479-482e-8027-18bc8193f8fe.c', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\ca30e3d0-9479-482e-8027-18bc8193f8fe'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-01 09:53:41,929 log Internal Server Error: /api/tests-answer-com/
+ERROR 2024-08-01 09:53:41,931 basehttp "POST /api/tests-answer-com/ HTTP/1.1" 500 158
+ERROR 2024-08-01 18:45:55,350 log Internal Server Error: /api/import-mcq-questions/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 6350, in import_questions_from_word
+    data = create_json_structure(text, images_binary)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_json_structure() takes 1 positional argument but 2 were given
+ERROR 2024-08-01 18:45:55,828 basehttp "POST /api/import-mcq-questions/ HTTP/1.1" 500 76298
+ERROR 2024-08-01 18:49:01,414 log Internal Server Error: /api/import-mcq-questions/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 6350, in import_questions_from_word
+    data = create_json_structure(text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 6427, in create_json_structure
+    current_question['answers'].append(line[len('c_ans:'):].strip())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'answers'
+ERROR 2024-08-01 18:49:01,713 basehttp "POST /api/import-mcq-questions/ HTTP/1.1" 500 86359
+ERROR 2024-08-01 22:05:29,586 log Internal Server Error: /api/delete-question-paper/w1/
+ERROR 2024-08-01 22:05:29,718 basehttp "DELETE /api/delete-question-paper/w1/ HTTP/1.1" 500 119
+ERROR 2024-08-02 18:52:10,645 log Internal Server Error: /api/get-training-report/
+ERROR 2024-08-02 18:52:10,646 basehttp "GET /api/get-training-report/ HTTP/1.1" 500 5770
+ERROR 2024-08-02 19:21:08,465 log Internal Server Error: /api/test_reports/candidates/Test1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7946, in get_tests_Reports_candidates
+    tests_candidates = tests_candidates_map.objects.filter(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:21:08,473 basehttp "GET /api/test_reports/candidates/Test1/ HTTP/1.1" 500 126809
+ERROR 2024-08-02 19:22:18,838 log Internal Server Error: /api/test_reports/candidates/Test1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7946, in get_tests_Reports_candidates
+    tests_candidates = tests_candidates_map.objects.filter(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:22:18,847 basehttp "GET /api/test_reports/candidates/Test1/ HTTP/1.1" 500 127009
+ERROR 2024-08-02 19:23:52,546 log Internal Server Error: /api/test_reports/candidates/Test1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7954, in get_tests_Reports_candidates
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'student_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:23:52,554 basehttp "GET /api/test_reports/candidates/Test1/ HTTP/1.1" 500 125861
+ERROR 2024-08-02 19:34:48,183 log Internal Server Error: /api/number-of-offers/4/college_id/
+ERROR 2024-08-02 19:34:48,204 basehttp "GET /api/number-of-offers/4/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-02 19:37:35,660 log Internal Server Error: /api/test-list/saveetha/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:37:35,667 basehttp "GET /api/test-list/saveetha/ HTTP/1.1" 500 132232
+ERROR 2024-08-02 19:37:35,836 log Internal Server Error: /api/test-list/saveetha/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:37:35,844 basehttp "GET /api/test-list/saveetha/ HTTP/1.1" 500 132232
+ERROR 2024-08-02 19:37:46,179 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:37:46,182 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:37:46,445 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:37:46,449 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:37:58,657 log Internal Server Error: /api/test-list/nousers1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:37:58,662 basehttp "GET /api/test-list/nousers1/ HTTP/1.1" 500 124936
+ERROR 2024-08-02 19:37:58,927 log Internal Server Error: /api/test-list/nousers1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:37:58,929 basehttp "GET /api/test-list/nousers1/ HTTP/1.1" 500 124936
+ERROR 2024-08-02 19:38:06,290 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:38:06,294 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:38:06,464 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:38:06,469 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:38:11,822 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:38:11,826 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:38:11,981 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:38:11,985 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:42:57,988 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:42:57,992 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:42:58,147 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:42:58,150 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:43:16,997 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:43:17,001 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:43:17,213 log Internal Server Error: /api/test-list/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:43:17,216 basehttp "GET /api/test-list/Test0208/ HTTP/1.1" 500 128056
+ERROR 2024-08-02 19:44:41,787 log Internal Server Error: /api/test-list/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:44:41,791 basehttp "GET /api/test-list/test0108time/ HTTP/1.1" 500 132356
+ERROR 2024-08-02 19:44:41,958 log Internal Server Error: /api/test-list/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:44:41,962 basehttp "GET /api/test-list/test0108time/ HTTP/1.1" 500 132356
+ERROR 2024-08-02 19:47:10,977 log Internal Server Error: /api/test-list/Test1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:47:10,984 basehttp "GET /api/test-list/Test1/ HTTP/1.1" 500 125906
+ERROR 2024-08-02 19:49:50,970 log Internal Server Error: /api/test-list/Test1/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_candidates_map_testName
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id' conflicts with a field on the model.
+ERROR 2024-08-02 19:49:50,987 basehttp "GET /api/test-list/Test1/ HTTP/1.1" 500 126027
+ERROR 2024-08-02 19:57:55,533 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:57:55,547 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:57:55,557 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:57:55,560 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:58:10,201 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:58:10,212 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:58:10,221 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:58:10,226 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:58:17,517 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:58:17,524 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:58:17,534 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:58:17,536 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:59:16,156 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:59:16,167 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 19:59:16,177 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 19:59:16,183 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:00:37,957 log Internal Server Error: /api/test_reports/candidates/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7926, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:00:37,963 basehttp "GET /api/test_reports/candidates/test0108time/ HTTP/1.1" 500 105066
+ERROR 2024-08-02 20:00:38,066 log Internal Server Error: /api/test_reports/candidates/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7926, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:00:38,072 basehttp "GET /api/test_reports/candidates/test0108time/ HTTP/1.1" 500 105066
+ERROR 2024-08-02 20:00:50,832 log Internal Server Error: /api/test_reports/candidates/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7926, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:00:50,835 basehttp "GET /api/test_reports/candidates/test0108time/ HTTP/1.1" 500 105066
+ERROR 2024-08-02 20:00:50,940 log Internal Server Error: /api/test_reports/candidates/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7926, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:00:50,944 basehttp "GET /api/test_reports/candidates/test0108time/ HTTP/1.1" 500 105066
+ERROR 2024-08-02 20:04:18,010 log Internal Server Error: /api/testcandidate/
+ERROR 2024-08-02 20:04:18,012 basehttp "GET /api/testcandidate/ HTTP/1.1" 500 5402
+ERROR 2024-08-02 20:06:05,148 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7914, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:06:05,154 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:06:05,265 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7914, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:06:05,268 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:06:12,052 log Internal Server Error: /api/test_reports/candidates/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7914, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:06:12,055 basehttp "GET /api/test_reports/candidates/test0108time/ HTTP/1.1" 500 105066
+ERROR 2024-08-02 20:06:12,167 log Internal Server Error: /api/test_reports/candidates/test0108time/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7914, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:06:12,170 basehttp "GET /api/test_reports/candidates/test0108time/ HTTP/1.1" 500 105066
+ERROR 2024-08-02 20:10:40,110 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:10:40,116 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:10:40,349 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:10:40,353 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:10:55,335 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:10:55,338 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:10:55,441 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:10:55,443 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:11:22,348 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:11:22,352 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:11:22,462 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:11:22,465 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 104966
+ERROR 2024-08-02 20:11:36,421 log Internal Server Error: /api/test_reports/candidates/Test0208/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7894, in get_tests_Reports_candidates
+    'student_id': item['student_id'],
+                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'student_id'
+ERROR 2024-08-02 20:11:36,424 basehttp "GET /api/test_reports/candidates/Test0208/ HTTP/1.1" 500 105657
+ERROR 2024-08-02 20:18:41,428 log Internal Server Error: /api/testcandidate/mcq/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7206, in get_tests_candidates_map_MCQ
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:18:41,439 basehttp "GET /api/testcandidate/mcq/jeeva/ HTTP/1.1" 500 124220
+ERROR 2024-08-02 20:18:41,629 log Internal Server Error: /api/testcandidate/mcq/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7206, in get_tests_candidates_map_MCQ
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:18:41,633 basehttp "GET /api/testcandidate/mcq/jeeva/ HTTP/1.1" 500 124220
+ERROR 2024-08-02 20:18:45,303 log Internal Server Error: /api/testcandidate/coding/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7262, in get_tests_candidates_map_Coding
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:18:45,318 basehttp "GET /api/testcandidate/coding/jeeva/ HTTP/1.1" 500 124283
+ERROR 2024-08-02 20:18:45,646 log Internal Server Error: /api/testcandidate/coding/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7262, in get_tests_candidates_map_Coding
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:18:45,657 basehttp "GET /api/testcandidate/coding/jeeva/ HTTP/1.1" 500 124283
+ERROR 2024-08-02 20:18:48,558 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7749, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:18:48,562 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:18:48,790 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7749, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:18:48,795 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:19:08,679 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7749, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:19:08,685 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:19:08,918 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7749, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:19:08,922 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:19:22,220 log Internal Server Error: /api/testcandidate/coding/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7262, in get_tests_candidates_map_Coding
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:19:22,232 basehttp "GET /api/testcandidate/coding/jeeva/ HTTP/1.1" 500 124974
+ERROR 2024-08-02 20:21:58,071 log Internal Server Error: /api/testcandidate/mcq/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7206, in get_tests_candidates_map_MCQ
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:21:58,080 basehttp "GET /api/testcandidate/mcq/jeeva/ HTTP/1.1" 500 124911
+ERROR 2024-08-02 20:23:41,807 log Internal Server Error: /api/testcandidate/mcq/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7206, in get_tests_candidates_map_MCQ
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:23:41,812 basehttp "GET /api/testcandidate/mcq/jeeva/ HTTP/1.1" 500 124911
+ERROR 2024-08-02 20:27:47,750 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7827, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:27:47,758 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:27:47,936 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7827, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:27:47,939 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:28:21,174 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:28:21,180 basehttp "GET /api/candidates/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:28:21,575 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:28:21,611 basehttp "GET /api/candidates/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:28:21,841 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:28:21,889 basehttp "GET /api/candidates/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:28:32,095 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7827, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:28:32,099 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:28:32,347 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7827, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:28:32,357 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:28:53,287 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7827, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:28:53,292 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:28:53,502 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7827, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:28:53,510 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 20:30:04,784 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:30:04,785 basehttp "GET /api/candidates/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:30:05,365 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:30:05,366 basehttp "GET /api/candidates/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:30:05,752 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:30:05,802 basehttp "GET /api/candidates/ HTTP/1.1" 500 76
+ERROR 2024-08-02 20:31:22,633 log Internal Server Error: /api/candidates/
+ERROR 2024-08-02 20:31:22,634 basehttp "GET /api/candidates/ HTTP/1.1" 500 5307
+ERROR 2024-08-02 20:34:49,372 log Internal Server Error: /api/students-test-schedule/2/siddhu/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:34:49,381 basehttp "GET /api/students-test-schedule/2/siddhu/ HTTP/1.1" 500 130563
+ERROR 2024-08-02 20:34:49,549 log Internal Server Error: /api/students-test-schedule/2/siddhu/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:34:49,552 basehttp "GET /api/students-test-schedule/2/siddhu/ HTTP/1.1" 500 130563
+ERROR 2024-08-02 20:40:48,666 log Internal Server Error: /api/students-test-schedule/2/siddhu/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:40:48,674 basehttp "GET /api/students-test-schedule/2/siddhu/ HTTP/1.1" 500 130563
+ERROR 2024-08-02 20:40:48,959 log Internal Server Error: /api/students-test-schedule/2/siddhu/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 20:40:48,961 basehttp "GET /api/students-test-schedule/2/siddhu/ HTTP/1.1" 500 130563
+ERROR 2024-08-02 21:01:03,928 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 21:01:03,938 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 21:01:04,236 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 21:01:04,248 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 130922
+ERROR 2024-08-02 21:04:46,950 log Internal Server Error: /api/students-test-schedule/2/jeeva/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 7829, in get_students_test_schedule
+    ).values(
+      ^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1673, in _annotate
+    raise ValueError(
+ValueError: The annotation 'college_id_id' conflicts with a field on the model.
+ERROR 2024-08-02 21:04:46,958 basehttp "GET /api/students-test-schedule/2/jeeva/ HTTP/1.1" 500 131613
+ERROR 2024-08-02 22:06:45,411 log Internal Server Error: /api/get/course_schedule/
+ERROR 2024-08-02 22:06:45,412 basehttp "GET /api/get/course_schedule/ HTTP/1.1" 500 5403
+ERROR 2024-08-02 22:07:51,482 log Internal Server Error: /api/get/course_schedule/
+ERROR 2024-08-02 22:07:51,483 basehttp "GET /api/get/course_schedule/ HTTP/1.1" 500 5397
+ERROR 2024-08-03 14:53:32,795 log Internal Server Error: /api/colleges/uploads/
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column "college_logo" of relation "app_college_master" does not exist
+LINE 1: INSERT INTO "app_college_master" ("college", "college_logo",...
+                                                     ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\python Django\LMSProject2\backend\app\views.py", line 9833, in upload_college
+    college.save()
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\pythonprojects\campusconnection\lms-react\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column "college_logo" of relation "app_college_master" does not exist
+LINE 1: INSERT INTO "app_college_master" ("college", "college_logo",...
+                                                     ^
+
+ERROR 2024-08-03 14:53:32,806 basehttp "POST /api/colleges/uploads/ HTTP/1.1" 500 150249
+ERROR 2024-08-03 16:20:48,214 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-03 16:20:48,225 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-03 16:20:49,421 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-03 16:20:49,471 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-05 09:57:56,110 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-05 09:57:56,131 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-05 09:57:57,248 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-05 09:57:57,278 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-05 10:07:10,898 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-05 10:07:10,928 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-05 10:07:11,919 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-05 10:07:11,964 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-05 10:39:14,554 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-05 10:39:14,558 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
+ERROR 2024-08-05 10:39:15,832 log Internal Server Error: /api/number-of-offers/1/college_id/
+ERROR 2024-08-05 10:39:15,850 basehttp "GET /api/number-of-offers/1/college_id/ HTTP/1.1" 500 67
