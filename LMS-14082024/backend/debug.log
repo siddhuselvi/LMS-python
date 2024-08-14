@@ -1,0 +1,190 @@
+ERROR 2024-08-12 16:17:53,847 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\029f5bb5-3c8e-43c6-94de-719d3f5e5f17\Main.java
+ERROR 2024-08-12 16:17:54,630 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:18:02,696 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\029f5bb5-3c8e-43c6-94de-719d3f5e5f17\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:18:03,590 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='The length of the txt string is: 26\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:18:03,605 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\ba8bff9a-dc9c-4c3d-b617-026bdbb4b5e4\Main.java
+ERROR 2024-08-12 16:18:03,606 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:18:12,028 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\ba8bff9a-dc9c-4c3d-b617-026bdbb4b5e4\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:18:15,262 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='The length of the txt string is: 26\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:18:21,532 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\140aabea-ed56-47c0-b3b9-e1ab19536595\Main.java
+ERROR 2024-08-12 16:18:21,532 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:18:31,519 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\140aabea-ed56-47c0-b3b9-e1ab19536595\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:18:33,996 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='The length of the txt string is: 26\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:18:34,284 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\b0d05c48-8126-4649-bf7d-c1425800bc4d\Main.java
+ERROR 2024-08-12 16:18:34,411 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:18:43,858 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\b0d05c48-8126-4649-bf7d-c1425800bc4d\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:18:46,417 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='The length of the txt string is: 26\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:21:14,593 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\565a4f40-9239-47b2-82a7-65300ef4cc50\Main.java
+ERROR 2024-08-12 16:21:14,596 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:21:21,396 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\565a4f40-9239-47b2-82a7-65300ef4cc50\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:21:22,020 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:21:22,028 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\f02304b9-9e59-4abd-b5f0-6d623d4174be\Main.java
+ERROR 2024-08-12 16:21:22,030 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:21:25,070 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\f02304b9-9e59-4abd-b5f0-6d623d4174be\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:21:25,735 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:21:33,817 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\f77a474c-3941-44d6-b3fa-ffe3a07d15b9\Main.java
+ERROR 2024-08-12 16:21:33,873 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:21:43,639 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\f77a474c-3941-44d6-b3fa-ffe3a07d15b9\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:21:46,727 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 16:21:46,876 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\678cd752-84fb-4fbb-8b21-214070cd2500\Main.java
+ERROR 2024-08-12 16:21:46,928 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-12 16:21:57,049 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\678cd752-84fb-4fbb-8b21-214070cd2500\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-12 16:21:59,547 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-12 19:55:47,937 log Internal Server Error: /api/get-question-paper/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 3098, in get_question_paper
+    dtm_created_local=timezone.localtime(F('dtm_created'))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\utils\timezone.py", line 182, in localtime
+    if is_naive(value):
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\utils\timezone.py", line 234, in is_naive
+    return value.utcoffset() is None
+           ^^^^^^^^^^^^^^^
+AttributeError: 'F' object has no attribute 'utcoffset'
+ERROR 2024-08-12 19:55:48,088 basehttp "GET /api/get-question-paper/ HTTP/1.1" 500 107724
+ERROR 2024-08-12 19:57:36,251 log Internal Server Error: /api/get-question-paper/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 3098, in get_question_paper
+    dtm_created_local=timezone.localtime(F('dtm_created'))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\utils\timezone.py", line 182, in localtime
+    if is_naive(value):
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\utils\timezone.py", line 234, in is_naive
+    return value.utcoffset() is None
+           ^^^^^^^^^^^^^^^
+AttributeError: 'F' object has no attribute 'utcoffset'
+ERROR 2024-08-12 19:57:36,311 basehttp "GET /api/get-question-paper/ HTTP/1.1" 500 107724
+ERROR 2024-08-13 10:58:37,608 log Internal Server Error: /api/trainers/create/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 763, in post
+    resume_file = ContentFile(resume_content, name=f'{fileName}.pdf')
+                  ^^^^^^^^^^^
+NameError: name 'ContentFile' is not defined
+ERROR 2024-08-13 10:58:37,706 basehttp "POST /api/trainers/create/ HTTP/1.1" 500 104967
+ERROR 2024-08-13 11:37:54,149 views Temp C Path Created...: D:\V_Project\LMS-New\backend\assets\157c32ee-f7cb-441d-b4fc-31db111deb30.c
+ERROR 2024-08-13 11:37:56,190 views Temp C Execute Path Created...: D:\V_Project\LMS-New\backend\assets\157c32ee-f7cb-441d-b4fc-31db111deb30
+ERROR 2024-08-13 11:39:51,968 views Temp C Path Created...: D:\V_Project\LMS-New\backend\assets\68468f26-ca8e-49a9-9613-b7e501c48185.c
+ERROR 2024-08-13 11:39:51,997 views Temp C Execute Path Created...: D:\V_Project\LMS-New\backend\assets\68468f26-ca8e-49a9-9613-b7e501c48185
+ERROR 2024-08-13 11:40:22,191 views Compile Result...: CompletedProcess(args=['gcc', 'D:\\V_Project\\LMS-New\\backend\\assets\\68468f26-ca8e-49a9-9613-b7e501c48185.c', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\68468f26-ca8e-49a9-9613-b7e501c48185'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 11:40:23,739 views Files Delete in Assets
+ERROR 2024-08-13 11:40:24,134 views Temp C Path Created...: D:\V_Project\LMS-New\backend\assets\5d54a5c3-db7c-4df4-b88a-91b822dd9b88.c
+ERROR 2024-08-13 11:40:24,136 views Temp C Execute Path Created...: D:\V_Project\LMS-New\backend\assets\5d54a5c3-db7c-4df4-b88a-91b822dd9b88
+ERROR 2024-08-13 11:40:41,032 views Compile Result...: CompletedProcess(args=['gcc', 'D:\\V_Project\\LMS-New\\backend\\assets\\5d54a5c3-db7c-4df4-b88a-91b822dd9b88.c', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\5d54a5c3-db7c-4df4-b88a-91b822dd9b88'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 11:40:42,789 views Files Delete in Assets
+ERROR 2024-08-13 11:42:07,832 views Temp C Path Created...: D:\V_Project\LMS-New\backend\assets\c0b5ea09-db86-4a94-a58f-7be5fc6ebc10.c
+ERROR 2024-08-13 11:42:07,886 views Temp C Execute Path Created...: D:\V_Project\LMS-New\backend\assets\c0b5ea09-db86-4a94-a58f-7be5fc6ebc10
+ERROR 2024-08-13 11:42:10,665 views Compile Result...: CompletedProcess(args=['gcc', 'D:\\V_Project\\LMS-New\\backend\\assets\\c0b5ea09-db86-4a94-a58f-7be5fc6ebc10.c', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\c0b5ea09-db86-4a94-a58f-7be5fc6ebc10'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 11:42:11,772 views Files Delete in Assets
+ERROR 2024-08-13 11:42:11,780 views Temp C Path Created...: D:\V_Project\LMS-New\backend\assets\50a8f428-cf83-409d-8b14-8e097e579801.c
+ERROR 2024-08-13 11:42:11,786 views Temp C Execute Path Created...: D:\V_Project\LMS-New\backend\assets\50a8f428-cf83-409d-8b14-8e097e579801
+ERROR 2024-08-13 11:42:13,351 views Compile Result...: CompletedProcess(args=['gcc', 'D:\\V_Project\\LMS-New\\backend\\assets\\50a8f428-cf83-409d-8b14-8e097e579801.c', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\50a8f428-cf83-409d-8b14-8e097e579801'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 11:42:13,522 views Files Delete in Assets
+ERROR 2024-08-13 22:56:48,361 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\602fdf69-8301-44b5-b9ce-4ed83731bfea\Main.java
+ERROR 2024-08-13 22:56:48,375 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 22:56:56,309 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\602fdf69-8301-44b5-b9ce-4ed83731bfea\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 22:57:05,944 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 22:57:06,208 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\02e35e0b-93f8-43e1-90cf-472f0196201c\Main.java
+ERROR 2024-08-13 22:57:06,308 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 22:57:35,374 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\02e35e0b-93f8-43e1-90cf-472f0196201c\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 22:58:59,129 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\1054fd99-6cd8-494d-95f7-9b5ec1a79414\Main.java
+ERROR 2024-08-13 22:58:59,142 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 22:59:12,488 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\1054fd99-6cd8-494d-95f7-9b5ec1a79414\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 22:59:14,104 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 22:59:14,206 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\41b83f43-5967-4741-9d7c-93f78f779b9c\Main.java
+ERROR 2024-08-13 22:59:14,254 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 22:59:21,765 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\41b83f43-5967-4741-9d7c-93f78f779b9c\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 22:59:22,730 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='20 is greater than 18\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 22:59:50,780 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\0d0ca55a-40b6-4f4d-9feb-c5a03a97f86d\Main.java
+ERROR 2024-08-13 22:59:50,982 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 22:59:58,751 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\0d0ca55a-40b6-4f4d-9feb-c5a03a97f86d\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 22:59:59,928 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='0\n1\n2\n3\n4\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 22:59:59,986 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\b263d3da-9556-47bc-bcd4-c90a47cb482b\Main.java
+ERROR 2024-08-13 22:59:59,987 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 23:00:07,278 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\b263d3da-9556-47bc-bcd4-c90a47cb482b\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 23:00:08,358 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='0\n1\n2\n3\n4\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 23:04:34,792 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\80975b19-897c-4c9a-9a83-a13aa6dffa25\Main.java
+ERROR 2024-08-13 23:04:35,186 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 23:04:58,545 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\80975b19-897c-4c9a-9a83-a13aa6dffa25\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 23:05:04,372 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='0\n1\n2\n3\n4\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 23:05:04,471 views Temp Java PAth Created...: D:\V_Project\LMS-New\backend\assets\2df75bcf-9949-435c-b0a5-41c1f222a5f8\Main.java
+ERROR 2024-08-13 23:05:04,478 views Temp Java Excecute PAth Created...: Main
+ERROR 2024-08-13 23:05:21,419 views Compile Result...: CompletedProcess(args=['javac', 'D:\\V_Project\\LMS-New\\backend\\assets\\2df75bcf-9949-435c-b0a5-41c1f222a5f8\\Main.java'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-13 23:05:23,908 views Run Result...: CompletedProcess(args=['java', '-Djava.security.manager', '-Djava.security.policy==java.policy', 'Main'], returncode=0, stdout='0\n1\n2\n3\n4\n', stderr='WARNING: A command line option has enabled the Security Manager\nWARNING: The Security Manager is deprecated and will be removed in a future release\n')
+ERROR 2024-08-13 23:27:41,714 log Internal Server Error: /api/tests-answer-com/submit/
+ERROR 2024-08-13 23:27:42,720 basehttp "POST /api/tests-answer-com/submit/ HTTP/1.1" 500 38
+ERROR 2024-08-13 23:35:36,280 log Internal Server Error: /api/tests-answer-com/
+ERROR 2024-08-13 23:35:36,286 basehttp "POST /api/tests-answer-com/ HTTP/1.1" 500 158
