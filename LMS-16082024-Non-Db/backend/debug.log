@@ -1,0 +1,254 @@
+ERROR 2024-08-14 17:23:37,848 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\fe906640-ea70-4957-b5df-1763a107970b.cpp
+ERROR 2024-08-14 17:23:37,861 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\fe906640-ea70-4957-b5df-1763a107970b
+ERROR 2024-08-14 17:23:40,939 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:23:41,126 log Internal Server Error: /api/program_compiler/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 5144, in program_compiler
+    return Response({"result":language_dict[p_type](code,inputs)})
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 5117, in execute_cpp_code
+    os.remove(f"{exec_path}.exe")
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.exe'
+ERROR 2024-08-14 17:23:41,266 basehttp "POST /api/program_compiler/ HTTP/1.1" 500 108570
+ERROR 2024-08-14 17:26:13,816 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp
+ERROR 2024-08-14 17:26:13,828 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\eb2fa1db-0c4f-4042-bb08-613994fd7ed0
+ERROR 2024-08-14 17:26:16,251 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:26:16,252 views Files Delete in Assets
+ERROR 2024-08-14 17:32:22,593 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp
+ERROR 2024-08-14 17:32:22,608 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\e1ad1b54-8bd1-4820-bb6b-d977b04894b5
+ERROR 2024-08-14 17:32:26,824 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:32:26,834 views Files Delete in Assets
+ERROR 2024-08-14 17:47:19,473 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp
+ERROR 2024-08-14 17:47:19,475 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\18d6f749-91c4-4572-9a59-d6c542f23f45
+ERROR 2024-08-14 17:47:21,439 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:47:21,443 views Files Delete in Assets
+ERROR 2024-08-14 17:50:34,413 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\6a780f00-1322-4e83-96d7-effaf281653c.cpp
+ERROR 2024-08-14 17:50:34,414 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\6a780f00-1322-4e83-96d7-effaf281653c
+ERROR 2024-08-14 17:50:36,412 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:50:36,428 views Files Delete in Assets
+ERROR 2024-08-14 18:47:38,456 log Internal Server Error: /api/schedule-with-tests/2024-08-14/8/
+ERROR 2024-08-14 18:47:39,015 basehttp "GET /api/schedule-with-tests/2024-08-14/8/ HTTP/1.1" 500 56
+ERROR 2024-08-14 18:54:30,789 log Internal Server Error: /api/schedule-with-tests/2024-08-14/9/
+ERROR 2024-08-14 18:54:31,500 basehttp "GET /api/schedule-with-tests/2024-08-14/9/ HTTP/1.1" 500 56
+ERROR 2024-08-16 18:11:32,667 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\d22e023e-8eff-428b-abc6-f7998d93ef1d.cpp
+ERROR 2024-08-16 18:11:33,200 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\d22e023e-8eff-428b-abc6-f7998d93ef1d
+ERROR 2024-08-16 18:13:32,765 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\ed247444-c917-40c1-8c14-4856f6678fe7.cpp
+ERROR 2024-08-16 18:13:32,767 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\ed247444-c917-40c1-8c14-4856f6678fe7
+ERROR 2024-08-16 18:13:44,661 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\ed247444-c917-40c1-8c14-4856f6678fe7.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\ed247444-c917-40c1-8c14-4856f6678fe7'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-16 18:13:45,008 views Process Result...: <Popen: returncode: None args: ['D:\\V_Project\\LMS-New\\backend\\assets\\ed...>
+ERROR 2024-08-16 18:18:05,307 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp
+ERROR 2024-08-16 18:18:05,315 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\bfa7f020-a60c-428a-8e85-c34290b56cf0
+ERROR 2024-08-16 18:18:08,151 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:33:24: error: 'numeric_limits' was not declared in this scope\n }\n\n                        ^             \nD:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:33:49: error: expected primary-expression before '>' token\n }\n\n                                                 ^\nD:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:33:56: error: no matching function for call to 'max()'\n }\n\n                                                        ^\nIn file included from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\char_traits.h:39:0,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ios:40,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ostream:38,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\iostream:39,\n                 from D:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:1:\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:219:5: note: candidate: template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)\n     max(const _Tp& __a, const _Tp& __b)\n     ^~~\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:219:5: note:   template argument deduction/substitution failed:\nD:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:33:56: note:   candidate expects 2 arguments, 0 provided\n }\n\n                                                        ^\nIn file included from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\char_traits.h:39:0,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ios:40,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ostream:38,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\iostream:39,\n                 from D:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:1:\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:265:5: note: candidate: template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)\n     max(const _Tp& __a, const _Tp& __b, _Compare __comp)\n     ^~~\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:265:5: note:   template argument deduction/substitution failed:\nD:\\V_Project\\LMS-New\\backend\\assets\\bfa7f020-a60c-428a-8e85-c34290b56cf0.cpp:33:56: note:   candidate expects 3 arguments, 0 provided\n }\n\n                                                        ^\n")
+ERROR 2024-08-16 18:18:08,252 views Files Delete in Assets
+ERROR 2024-08-16 18:18:08,415 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp
+ERROR 2024-08-16 18:18:08,465 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\6b3cdf72-bc4e-442d-80b4-da989d9692c6
+ERROR 2024-08-16 18:18:15,459 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:33:24: error: 'numeric_limits' was not declared in this scope\n }\n\n                        ^             \nD:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:33:49: error: expected primary-expression before '>' token\n }\n\n                                                 ^\nD:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:33:56: error: no matching function for call to 'max()'\n }\n\n                                                        ^\nIn file included from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\char_traits.h:39:0,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ios:40,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ostream:38,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\iostream:39,\n                 from D:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:1:\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:219:5: note: candidate: template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)\n     max(const _Tp& __a, const _Tp& __b)\n     ^~~\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:219:5: note:   template argument deduction/substitution failed:\nD:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:33:56: note:   candidate expects 2 arguments, 0 provided\n }\n\n                                                        ^\nIn file included from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\char_traits.h:39:0,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ios:40,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\ostream:38,\n                 from c:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\iostream:39,\n                 from D:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:1:\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:265:5: note: candidate: template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)\n     max(const _Tp& __a, const _Tp& __b, _Compare __comp)\n     ^~~\nc:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\bits\\stl_algobase.h:265:5: note:   template argument deduction/substitution failed:\nD:\\V_Project\\LMS-New\\backend\\assets\\6b3cdf72-bc4e-442d-80b4-da989d9692c6.cpp:33:56: note:   candidate expects 3 arguments, 0 provided\n }\n\n                                                        ^\n")
+ERROR 2024-08-16 18:18:15,489 views Files Delete in Assets
+ERROR 2024-08-16 18:20:05,669 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\d3071101-c75a-4789-933d-d9c73d9129bd.cpp
+ERROR 2024-08-16 18:20:05,672 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\d3071101-c75a-4789-933d-d9c73d9129bd
+ERROR 2024-08-16 18:20:10,304 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\d3071101-c75a-4789-933d-d9c73d9129bd.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\d3071101-c75a-4789-933d-d9c73d9129bd'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-16 18:20:10,500 views Process Result...: <Popen: returncode: None args: ['D:\\V_Project\\LMS-New\\backend\\assets\\d3...>
+ERROR 2024-08-16 18:40:13,686 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\e94bcf48-26db-4c02-8819-9c11094df367.cpp
+ERROR 2024-08-16 18:40:13,687 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\e94bcf48-26db-4c02-8819-9c11094df367
+ERROR 2024-08-16 18:40:31,909 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\462f6432-d3f5-40a1-989d-4123b05351ef.cpp
+ERROR 2024-08-16 18:40:31,911 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\462f6432-d3f5-40a1-989d-4123b05351ef
+ERROR 2024-08-16 18:40:34,973 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\e94bcf48-26db-4c02-8819-9c11094df367.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\e94bcf48-26db-4c02-8819-9c11094df367'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-16 18:40:36,524 views Process Result...: <Popen: returncode: None args: ['D:\\V_Project\\LMS-New\\backend\\assets\\e9...>
+ERROR 2024-08-16 18:40:45,074 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\462f6432-d3f5-40a1-989d-4123b05351ef.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\462f6432-d3f5-40a1-989d-4123b05351ef'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-16 18:40:45,329 views Process Result...: <Popen: returncode: None args: ['D:\\V_Project\\LMS-New\\backend\\assets\\46...>
+ERROR 2024-08-16 18:40:45,729 views Files Delete in Assets
+ERROR 2024-08-16 18:40:46,030 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\c8d67f03-cf39-4c0a-9bd4-7931f0fe4432.cpp
+ERROR 2024-08-16 18:40:46,102 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\c8d67f03-cf39-4c0a-9bd4-7931f0fe4432
+ERROR 2024-08-16 18:42:26,014 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\b7984cf4-f881-4cf5-ad74-4ca4cdc7ee2b.cpp
+ERROR 2024-08-16 18:42:26,137 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\b7984cf4-f881-4cf5-ad74-4ca4cdc7ee2b
+ERROR 2024-08-16 18:42:28,715 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\b7984cf4-f881-4cf5-ad74-4ca4cdc7ee2b.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\b7984cf4-f881-4cf5-ad74-4ca4cdc7ee2b'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-16 18:42:28,801 views Process Result...: <Popen: returncode: None args: ['D:\\V_Project\\LMS-New\\backend\\assets\\b7...>
+ERROR 2024-08-16 18:42:28,854 views Files Delete in Assets
+ERROR 2024-08-16 18:42:28,863 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\a01e2c8a-0672-4ab8-a9b3-fdf99fe0bf10.cpp
+ERROR 2024-08-16 18:42:28,864 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\a01e2c8a-0672-4ab8-a9b3-fdf99fe0bf10
+ERROR 2024-08-16 18:42:30,507 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\a01e2c8a-0672-4ab8-a9b3-fdf99fe0bf10.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\a01e2c8a-0672-4ab8-a9b3-fdf99fe0bf10'], returncode=0, stdout='', stderr='')
+ERROR 2024-08-16 18:42:30,616 views Process Result...: <Popen: returncode: None args: ['D:\\V_Project\\LMS-New\\backend\\assets\\a0...>
+ERROR 2024-08-16 18:42:30,644 views Files Delete in Assets
+ERROR 2024-08-16 19:53:16,535 log Internal Server Error: /api/nondb-candidates/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 7486, in get_nondb_candidate
+    result = list(nondatabase_candidates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1513, in results_iter
+    results = self.execute_sql(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\silk\sql.py", line 68, in execute_sql
+    q, params = self.as_sql()
+                ^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 296, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\expressions.py", line 1017, in as_sql
+    return template % data, params
+           ~~~~~~~~~^~~~~~
+KeyError: 'format_string'
+ERROR 2024-08-16 19:53:16,839 basehttp "GET /api/nondb-candidates/ HTTP/1.1" 500 152271
+ERROR 2024-08-16 19:54:31,128 log Internal Server Error: /api/nondb-candidates/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 7487, in get_nondb_candidate
+    result = list(nondatabase_candidates)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1513, in results_iter
+    results = self.execute_sql(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\silk\sql.py", line 68, in execute_sql
+    q, params = self.as_sql()
+                ^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 736, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 296, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 546, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\expressions.py", line 1017, in as_sql
+    return template % data, params
+           ~~~~~~~~~^~~~~~
+KeyError: 'format_string'
+ERROR 2024-08-16 19:54:31,274 basehttp "GET /api/nondb-candidates/ HTTP/1.1" 500 152271
+ERROR 2024-08-16 19:56:08,483 log Internal Server Error: /api/nondb-candidates/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 7478, in get_nondb_candidate
+    'user_name': item['user_name'],
+                 ~~~~^^^^^^^^^^^^^
+TypeError: 'login' object is not subscriptable
+ERROR 2024-08-16 19:56:08,632 basehttp "GET /api/nondb-candidates/ HTTP/1.1" 500 101014
