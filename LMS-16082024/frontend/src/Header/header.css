@@ -1,0 +1,23 @@
+.headerss-container {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 150px;
+    height: 100%; /* Ensures full height alignment */
+  }
+  
+  .headerss-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .headerss-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  

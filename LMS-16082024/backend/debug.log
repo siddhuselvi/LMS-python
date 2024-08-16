@@ -1,0 +1,57 @@
+ERROR 2024-08-14 17:23:37,848 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\fe906640-ea70-4957-b5df-1763a107970b.cpp
+ERROR 2024-08-14 17:23:37,861 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\fe906640-ea70-4957-b5df-1763a107970b
+ERROR 2024-08-14 17:23:40,939 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:23:41,126 log Internal Server Error: /api/program_compiler/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 5144, in program_compiler
+    return Response({"result":language_dict[p_type](code,inputs)})
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 5117, in execute_cpp_code
+    os.remove(f"{exec_path}.exe")
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'D:\\V_Project\\LMS-New\\backend\\assets\\fe906640-ea70-4957-b5df-1763a107970b.exe'
+ERROR 2024-08-14 17:23:41,266 basehttp "POST /api/program_compiler/ HTTP/1.1" 500 108570
+ERROR 2024-08-14 17:26:13,816 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp
+ERROR 2024-08-14 17:26:13,828 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\eb2fa1db-0c4f-4042-bb08-613994fd7ed0
+ERROR 2024-08-14 17:26:16,251 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\eb2fa1db-0c4f-4042-bb08-613994fd7ed0.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:26:16,252 views Files Delete in Assets
+ERROR 2024-08-14 17:32:22,593 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp
+ERROR 2024-08-14 17:32:22,608 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\e1ad1b54-8bd1-4820-bb6b-d977b04894b5
+ERROR 2024-08-14 17:32:26,824 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\e1ad1b54-8bd1-4820-bb6b-d977b04894b5.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:32:26,834 views Files Delete in Assets
+ERROR 2024-08-14 17:47:19,473 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp
+ERROR 2024-08-14 17:47:19,475 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\18d6f749-91c4-4572-9a59-d6c542f23f45
+ERROR 2024-08-14 17:47:21,439 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\18d6f749-91c4-4572-9a59-d6c542f23f45.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:47:21,443 views Files Delete in Assets
+ERROR 2024-08-14 17:50:34,413 views C++ File Path Created...: D:\V_Project\LMS-New\backend\assets\6a780f00-1322-4e83-96d7-effaf281653c.cpp
+ERROR 2024-08-14 17:50:34,414 views C++ File Execute Path Created...: D:\V_Project\LMS-New\backend\assets\6a780f00-1322-4e83-96d7-effaf281653c
+ERROR 2024-08-14 17:50:36,412 views Compile Result...: CompletedProcess(args=['g++', 'D:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c.cpp', '-o', 'D:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c'], returncode=1, stdout='', stderr="D:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c.cpp: In function 'int main()':\nD:\\V_Project\\LMS-New\\backend\\assets\\6a780f00-1322-4e83-96d7-effaf281653c.cpp:13:19: error: 'max_element' is not a member of 'std'\n     maxElement = *std::max_element(arr.begin(), arr.end());\n                   ^~~\n")
+ERROR 2024-08-14 17:50:36,428 views Files Delete in Assets
+ERROR 2024-08-14 18:47:38,456 log Internal Server Error: /api/schedule-with-tests/2024-08-14/8/
+ERROR 2024-08-14 18:47:39,015 basehttp "GET /api/schedule-with-tests/2024-08-14/8/ HTTP/1.1" 500 56
+ERROR 2024-08-14 18:54:30,789 log Internal Server Error: /api/schedule-with-tests/2024-08-14/9/
+ERROR 2024-08-14 18:54:31,500 basehttp "GET /api/schedule-with-tests/2024-08-14/9/ HTTP/1.1" 500 56
