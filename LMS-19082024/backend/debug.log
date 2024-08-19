@@ -1,0 +1,13 @@
+ERROR 2024-08-17 14:22:22,087 views Catch Key...: question_data_code_3
+ERROR 2024-08-17 14:22:22,129 views -----Data From Cache----
+ERROR 2024-08-17 14:22:22,153 views -----Data From Database----
+ERROR 2024-08-17 14:23:18,440 views Catch Key...: question_data_code_3
+ERROR 2024-08-17 14:23:18,484 views -----Data From Cache----
+ERROR 2024-08-17 14:26:19,489 views Catch Key...: question_data_code_3
+ERROR 2024-08-17 14:26:19,700 views -----Data From Cache----
+ERROR 2024-08-17 18:06:30,043 log Internal Server Error: /api/clear-log/
+ERROR 2024-08-17 18:06:30,045 basehttp "GET /api/clear-log/ HTTP/1.1" 500 159
+ERROR 2024-08-17 18:34:45,282 log Internal Server Error: /api/clear-log/
+ERROR 2024-08-17 18:34:45,289 basehttp "GET /api/clear-log/ HTTP/1.1" 500 159
+ERROR 2024-08-17 18:34:57,835 log Internal Server Error: /api/clear-log/
+ERROR 2024-08-17 18:34:57,836 basehttp "GET /api/clear-log/ HTTP/1.1" 500 159
