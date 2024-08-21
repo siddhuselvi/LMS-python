@@ -1,0 +1,39 @@
+ERROR 2024-08-21 11:13:53,877 views Catch Key...: question_data_code_22
+ERROR 2024-08-21 11:14:00,284 views -----Data From Cache----
+ERROR 2024-08-21 11:14:13,202 views -----Data From Database----
+ERROR 2024-08-21 11:33:54,721 views Catch Key...: question_data_code_22
+ERROR 2024-08-21 11:33:55,996 views -----Data From Cache----
+ERROR 2024-08-21 11:56:05,789 views Catch Key...: question_data_code_22
+ERROR 2024-08-21 11:56:07,533 views -----Data From Cache----
+ERROR 2024-08-21 15:40:39,855 log Internal Server Error: /api/update-is-accept/5/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 7630, in update_is_accept
+    candidate.round_of_interview = 'Registered'
+    ^^^^^^^^^
+NameError: name 'candidate' is not defined. Did you mean: 'candidates'?
+ERROR 2024-08-21 15:40:39,979 basehttp "PATCH /api/update-is-accept/5/ HTTP/1.1" 500 99815
