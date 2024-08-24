@@ -1,0 +1,207 @@
+ERROR 2024-08-21 11:13:53,877 views Catch Key...: question_data_code_22
+ERROR 2024-08-21 11:14:00,284 views -----Data From Cache----
+ERROR 2024-08-21 11:14:13,202 views -----Data From Database----
+ERROR 2024-08-21 11:33:54,721 views Catch Key...: question_data_code_22
+ERROR 2024-08-21 11:33:55,996 views -----Data From Cache----
+ERROR 2024-08-21 11:56:05,789 views Catch Key...: question_data_code_22
+ERROR 2024-08-21 11:56:07,533 views -----Data From Cache----
+ERROR 2024-08-21 15:40:39,855 log Internal Server Error: /api/update-is-accept/5/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 7630, in update_is_accept
+    candidate.round_of_interview = 'Registered'
+    ^^^^^^^^^
+NameError: name 'candidate' is not defined. Did you mean: 'candidates'?
+ERROR 2024-08-21 15:40:39,979 basehttp "PATCH /api/update-is-accept/5/ HTTP/1.1" 500 99815
+ERROR 2024-08-22 12:44:19,340 log Internal Server Error: /api/course-content/Trainer/
+ERROR 2024-08-22 12:44:19,847 basehttp "GET /api/course-content/Trainer/?user_name=trainer31 HTTP/1.1" 500 54
+ERROR 2024-08-22 12:44:20,807 log Internal Server Error: /api/course-content/Trainer/
+ERROR 2024-08-22 12:44:20,875 basehttp "GET /api/course-content/Trainer/?user_name=trainer31 HTTP/1.1" 500 54
+ERROR 2024-08-22 19:30:41,849 log Internal Server Error: /api/course-content/Trainer/
+ERROR 2024-08-22 19:30:42,205 basehttp "GET /api/course-content/Trainer/?user_name=trainer31 HTTP/1.1" 500 54
+ERROR 2024-08-22 19:30:42,562 log Internal Server Error: /api/course-content/Trainer/
+ERROR 2024-08-22 19:30:42,565 basehttp "GET /api/course-content/Trainer/?user_name=trainer31 HTTP/1.1" 500 54
+ERROR 2024-08-23 00:30:48,480 log Internal Server Error: /api/round-of-interview-count/
+ERROR 2024-08-23 00:30:48,579 basehttp "GET /api/round-of-interview-count/?college_id=1&company_name=Wipro HTTP/1.1" 500 5894
+ERROR 2024-08-23 13:14:52,590 log Internal Server Error: /api/trainers/all/
+ERROR 2024-08-23 13:14:52,998 basehttp "GET /api/trainers/all/ HTTP/1.1" 500 67
+ERROR 2024-08-23 13:14:54,697 log Internal Server Error: /api/trainers/all/
+ERROR 2024-08-23 13:14:54,703 basehttp "GET /api/trainers/all/ HTTP/1.1" 500 67
+ERROR 2024-08-23 13:38:38,076 log Internal Server Error: /api/trainers/all/
+ERROR 2024-08-23 13:38:38,452 basehttp "GET /api/trainers/all/ HTTP/1.1" 500 67
+ERROR 2024-08-23 13:38:38,758 log Internal Server Error: /api/trainers/all/
+ERROR 2024-08-23 13:38:38,761 basehttp "GET /api/trainers/all/ HTTP/1.1" 500 67
+ERROR 2024-08-23 13:40:47,465 log Internal Server Error: /api/trainers/all/
+ERROR 2024-08-23 13:40:47,589 basehttp "GET /api/trainers/all/ HTTP/1.1" 500 5334
+ERROR 2024-08-23 19:30:21,812 log Internal Server Error: /api/upload-screenshot/116
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/upload-screenshot/116/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-23 19:30:21,990 basehttp "POST /api/upload-screenshot/116 HTTP/1.1" 500 73742
+ERROR 2024-08-23 19:31:10,902 log Internal Server Error: /api/upload-screenshot/116
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/upload-screenshot/116/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-08-23 19:31:11,702 basehttp "POST /api/upload-screenshot/116 HTTP/1.1" 500 73742
+ERROR 2024-08-23 19:33:35,527 log Internal Server Error: /api/upload-screenshot/116/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 8201, in upload_screenshot
+    instance.test_candidate_id = pk
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\fields\related_descriptors.py", line 284, in __set__
+    raise ValueError(
+ValueError: Cannot assign "116": "Screenshots.test_candidate_id" must be a "tests_candidates_map" instance.
+ERROR 2024-08-23 19:33:35,669 basehttp "POST /api/upload-screenshot/116/ HTTP/1.1" 500 77681
+ERROR 2024-08-23 19:34:25,684 log Internal Server Error: /api/upload-screenshot/116/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 8201, in upload_screenshot
+    instance.test_candidate_id = pk
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\fields\related_descriptors.py", line 284, in __set__
+    raise ValueError(
+ValueError: Cannot assign "116": "Screenshots.test_candidate_id" must be a "tests_candidates_map" instance.
+ERROR 2024-08-23 19:34:25,918 basehttp "POST /api/upload-screenshot/116/ HTTP/1.1" 500 77681
+ERROR 2024-08-23 19:35:15,400 log Internal Server Error: /api/upload-screenshot/116/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 8201, in upload_screenshot
+    instance.test_candidate_id = pk
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\db\models\fields\related_descriptors.py", line 284, in __set__
+    raise ValueError(
+ValueError: Cannot assign "116": "Screenshots.test_candidate_id" must be a "tests_candidates_map" instance.
+ERROR 2024-08-23 19:35:15,427 basehttp "POST /api/upload-screenshot/116/ HTTP/1.1" 500 77681
+ERROR 2024-08-23 22:04:47,375 log Internal Server Error: /api//students/announcement/2/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 8225, in get_student_announcement
+    'announcement_image': student_entry.announcement_image.decode('utf-8') if student_entry.announcement_image else None
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'memoryview' object has no attribute 'decode'
+ERROR 2024-08-23 22:04:47,516 basehttp "GET /api//students/announcement/2/ HTTP/1.1" 500 100760
+ERROR 2024-08-23 23:23:57,643 log Internal Server Error: /api//students/announcement/2/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\AppData\Roaming\Python\Python312\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\V_Project\LMS-New\backend\app\views.py", line 8223, in get_student_announcement
+    data = list(map(lambda entry: {
+                ^^^^^^^^^^^^^^^^^^^
+TypeError: 'eligible_student_list' object is not iterable
+ERROR 2024-08-23 23:23:58,014 basehttp "GET /api//students/announcement/2/ HTTP/1.1" 500 100506
