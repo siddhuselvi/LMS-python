@@ -1,0 +1,70 @@
+/* src/college/Dashboard/EventForm.css */
+.event-form {
+    padding: 1rem;
+    background-color: #39444e;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .event-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  .event-form {
+    margin: 20px;
+  }
+  
+  .event-form-group {
+    margin-bottom: 10px;
+  }
+  
+  .event-list-item {
+    margin-bottom: 20px;
+  }
+  
+  .event-single-item {
+    margin-bottom: 20px;
+  }
+  
+  .event-form-group p {
+    margin: 0;
+  }
+  
+  .event-form-group label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .event-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .event-form input {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #39444e;
+    color: #d4dae0;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-top: 6px;
+  }
+  
+  .event-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #39444e;
+    margin-bottom: 10px;
+  }
+  .event-list-item input[type="radio"] {
+    margin-right: 10px;
+  }
